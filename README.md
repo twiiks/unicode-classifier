@@ -1,17 +1,16 @@
 # UnicodeClassifier
 
-
-
 ## Synopsis
 
 Traditionally, hangul is devided into six types according to combination method. The example is below. We got one step further. We added one more feature to this. We see two-charactered last consonant and one-charactered last consonant differently. So we divide hangul into **nine types** and new types are **'FC/W/DLC'**, **'FC/HV/DLC'** and **'FC/HV/W/DLC'** when DLC is double Last Consonant.
-![6 types of combination](./picture/screenshot.png) 
 
-## Code Explanation
+<img src="./picture/screenshot.png" width="300px">
+
+## Usage
 
 UnicodeClassifier can be used as a library for classifying any hangul to 9 character using module UnicodeToKoreanClass placed in file **UnicodeToKoreanClass.py** this module gets an **unicode** and return the **class number**. this can be also used as class counter program using the python file **stringToKoreanClass.py**. this program gets a hangul stirng as an argument and display how many each nine class is used in that string.
 
-## Test
+## Example
 
 you can just clone this repo and use like below.
 ```
@@ -34,6 +33,3 @@ class9(괆) : 0
 
 ## Requirement
 * python 3.6
-
-## License
-MIT: http://rem.mit-license.org
